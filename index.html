@@ -219,6 +219,39 @@ padding:60px;
 text-align:center;
 opacity:.6;
 }
+  .hero-strip {
+  margin: 20px 0 30px 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 18px;
+}
+
+.hero-line {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hero-line:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 700;
+  min-width: 90px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.hero-line strong {
+  font-size: 18px;
+}
+
+.urgent {
+  color: #b00020;
+}
 </style>
 </head>
 <body>
@@ -236,12 +269,27 @@ opacity:.6;
 <div>
 <h1>Get the Sydney Experience</h1>
 <p>
-6 Days / 5 Nights • Sydney Welcome Experience
+<div class="hero-strip">
 
-Surf lessons, rooftop socials, iconic Sydney experiences, and everything sorted from day one.
+  <div class="hero-line">
+    <span class="label">TOUR</span>
+    <span>6 Days / 5 Nights • Sydney Welcome Experience</span>
+  </div>
 
-From $1,499 AUD
-Limited Tours from November 1st 
+  <div class="hero-line">
+    <span class="label">INCLUDES</span>
+    <span>Surf lessons • Rooftop socials • Sydney icons • Local experiences</span>
+  </div>
+
+  <div class="hero-line">
+    <span class="label">PRICE</span>
+    <span><strong>From $1,499 AUD</strong></span>
+  </div>
+
+  <div class="hero-line urgent">
+    <span class="label">NEXT DATE</span>
+    <span>Limited departures from 1st November</span>
+  </div>
 </p>
 <button class="btn" onclick="document.getElementById('interest').scrollIntoView()">Register Interest</button>
 </div>
