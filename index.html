@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elsewhere House</title>
-
 <style>
-<details class="day">
-
-<summary>
-<div class="day-header">
-<span>Day 1</span>
-<h3>Arrival & Rooftop Welcome</h3>
-</div>
-</summary>
-
-
-  .btn {
-  margin-top: 100px;
+.btn{
+margin-top:90px;
+padding:18px 34px;
+background:#1e1e1e;
+color:white;
+border:none;
+cursor:pointer;
+font-size:15px;
+border-radius:40px;
+display:inline-block;
 }
-.book-btn {
-  display: inline-block;
-  background: #d4af37;
-  color: black;
-  padding: 14px 32px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
+
+.book-btn{
+display:inline-block;
+background:#d4af37;
+color:black;
+padding:14px 32px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
+
 .events-polaroid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -67,17 +60,6 @@ opacity:.72;
 line-height:1.6;
 }
 
-@media(max-width:1100px){
-.events-polaroid{
-grid-template-columns:repeat(2,1fr);
-}
-}
-
-@media(max-width:700px){
-.events-polaroid{
-grid-template-columns:1fr;
-}
-}
 *{
 margin:0;
 padding:0;
@@ -85,18 +67,8 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
-@media(max-width:700px){
-.hero h1{
-font-size:48px;
-}
-
-nav{
-flex-direction:column;
-gap:14px;
-}
-}
 body{
-font-family: "Georgia", serif;
+font-family:"Georgia",serif;
 background:#faf8f4;
 color:#1e1e1e;
 line-height:1.6;
@@ -150,18 +122,6 @@ font-size:22px;
 opacity:.75;
 margin-bottom:30px;
 max-width:620px;
-}
-
-.btn{
-padding:18px 34px;
-background:#1e1e1e;
-color:white;
-border:none;
-cursor:pointer;
-font-size:15px;
-border-radius:40px;
-margin-top:50px;
-display:inline-block;
 }
 
 .photo-grid{
@@ -244,6 +204,32 @@ padding:60px;
 text-align:center;
 opacity:.6;
 }
+
+@media(max-width:1100px){
+.events-polaroid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:700px){
+.events-polaroid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+nav{
+flex-direction:column;
+gap:14px;
+}
+
+.hero{
+grid-template-columns:1fr;
+}
+}
+
 </style>
 </head>
 <body>
